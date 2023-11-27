@@ -1,1 +1,0 @@
-# ViRe - technical report
