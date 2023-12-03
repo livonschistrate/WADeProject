@@ -22,3 +22,6 @@ MusicBrainz, Musicmoz Music Styles.
 You can see the project's important milestones and the progress detailed in this document - 
 [Progress file](https://docs.google.com/document/d/1MHJ19HaIKdIoZRtcN_FL_hw-1lTwfRrSwt2AvopHBLA/edit?usp=sharing)
 
+[Technical report](https://livonschistrate.github.io/WADeProject/docs/scholarly)
+
+#project #infoiasi #wade #web
