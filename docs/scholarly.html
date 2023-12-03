@@ -25,7 +25,7 @@
         <li><a href="#introduction"><span>2. </span>Introduction</a></li>
         <li><a href="#structure"><span>3. </span>Backend structures and architectures</a>
           <ol role="directory">
-            <li><a href="#languages"><span>3.1 </span>Programming languages</a></li>
+            <li><a href="#be-languages"><span>3.1 </span>Programming languages</a></li>
             <li><a href="#app-architecture"><span>3.2 </span>App architecture</code></a></li>
             <li><a href="#database-architecture"><span>3.3 </span>Database architecture</a>
             <li><a href="#user-module"><span>3.4 </span>User module</a></li>
@@ -33,7 +33,10 @@
             <li><a href="#playlist-making"><span>3.6 </span>Playlist making</a></li>
           </ol></li>
         <li><a href="#external-data-sources"><span>4. </span>External data sources</a></li>
-        <li><a href="#frontend-design"><span>5. </span>Frontend design</a></li>
+        <li><a href="#frontend-design"><span>5. </span>Frontend design</a>
+          <ol role="directory">
+            <li><a href="#fe-languages"><span>5.1 </span>Programming languages</a></li>
+          </ol></li>
         <li><a href="#end-users"><span>6. </span>Final users</a></li>
         <li><a href="#linked-data"><span>7. </span>Linked data principles</a></li>
         <li><a href="#acks"><span>8. </span>Acknowledgements</a></li>
@@ -93,7 +96,7 @@
         <h3><span>2.2 </span>Our proposed solution</h3>
         <p>
           We are proposing a service Web system which will consist in using a streaming service (Last.fm, Spotify, etc.),
-          a musical public resource (Discogs) and a knowledge model (MusicOntology). The system will also be accompanied
+          a musical public resource (Discogs) and a knowledge model (Music Ontology). The system will also be accompanied
           with a user-friendly interface.
         </p>
       </section>
@@ -106,7 +109,27 @@
       <section id="languages">
         <h3><span>3.1 </span>Programming languages</h3>
         <p>
-          
+          <b>Python</b> is an interpreted, object-oriented, high-level programming language with dynamic semantics. 
+          Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very 
+          attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect 
+          existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces 
+          the cost of program maintenance.
+        </p>
+        <p>
+          <b>Django</b> is a high-level Python web framework that encourages rapid development and clean, pragmatic design. 
+          Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing 
+          your app without needing to reinvent the wheel. It was designed to help developers take applications from concept to completion 
+          as quickly as possible and takes security seriously and helps developers avoid many common security mistakes.
+        </p>
+        <p>
+          <b>PostgreSQL</b> is a powerful, open source object-relational database system that uses and extends the SQL language combined with many 
+          features that safely store and scale the most complicated data workloads. It has earned a strong reputation for its proven architecture, 
+          reliability, data integrity, robust feature set, extensibility, and the dedication of the open source community behind the software to 
+          consistently deliver performant and innovative solutions.
+        </p>
+        <p>
+          <b>SPARQL</b> is the standard query language and protocol for Linked Open Data and RDF databases. Having been designed to query a great variety 
+          of data, it can efficiently extract information hidden in non-uniform data and stored in various formats and sources.
         </p>
       </section>
       <section id="app-architecture">
@@ -152,14 +175,38 @@
     <section id="external-data-sources">
       <h2><span>4. </span>External data sources</h2>
       <p>
-        
+        <b>Last.fm</b> is a global online music service that tracks people’s music listening habits  - across many devices/platforms 
+        and via its world-class personalized music service – to help them discover and share new music through recommendations, 
+        exploration and the integration of social networking tools. 
+        <br>
+        In order to gather necessary data, we're using Last.fm's own API. The Last.fm API allows anyone to build their own programs using the data
+        from the streaming service.
+      </p>
+      <p>
+        <b>Discogs</b> is an essential tool for music fans and record collectors at any step in their journey, from resources to explore artists’ discographies 
+        of music releases to tools that help you organize and build your collection. Discogs’ discography database and global online marketplace of vinyl, 
+        CDs, and cassettes from collectors and sellers worldwide puts music discovery and must-have records at your fingertips.
+        <br>
+        To gather information about a persons' purchases of such physical media, The Discogs API v2.0, a RESTful interface to Discogs data, comes to help.
+      </p>
+      <p>
+        <b>The Music Ontology</b> provides a vocabulary for publishing and linking a wide range of music-related data on the Web. Music Ontology data 
+        can be published by anyone as part of a web site or an API and linked with existing data, therefore creating a music-related web of data.
+        <br>
+        The Music Ontology Specification is useful for obtaining concepts and properties that describe music on the Semantic Web. 
       </p>
     </section>
     <section id="frontend-design">
       <h2><span>5. </span>Frontend design</h2>
-      <p>
-        
-      </p>
+      <section id="languages">
+        <h3><span>5.1 </span>Programming languages</h3>
+          <p>
+            <b>React</b> (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces 
+            based on components. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. 
+            Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries 
+            for routing and other client-side functionality.
+          </p>
+      </section>
     </section>
     <section id="final-users">
       <h2><span>6. </span>Final users</h2>
@@ -193,7 +240,8 @@
     <section id="acks">
       <h2><span>8. </span>Acknowledgements</h2>
       <p>
-        
+        This application was made as a project for the <a href="https://profs.info.uaic.ro/~busaco/teach/courses/wade/">Web Application Development</a> course
+        and thanks to <a href="https://profs.info.uaic.ro/~busaco/">our instructor </a>.
       </p>
     </section>
   
@@ -203,15 +251,31 @@
       <dl><dt id="ref-HTML">HTML</dt><dd property="schema:citation" typeof="schema:WebPage" resource="http://www.w3.org/TR/html5/">
         <cite property="schema:name"><a href="http://www.w3.org/TR/html5/">One of the HTML
         Specifications</a></cite>.
-      </dd><dt id="ref-RDFa">RDFa</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.w3.org/TR/rdfa-primer/">
-        <cite property="schema:name"><a href="https://www.w3.org/TR/rdfa-primer/">RDFa 1.1
-        Primer</a></cite>.
+      </dd><dt id="ref-RDFa">RDF</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.w3.org/RDF/">
+        <cite property="schema:name"><a href="https://www.w3.org/RDF/">RDF on W3C</a></cite>.
       </dd><dt id="ref-schema.org">schema.org</dt><dd property="schema:citation" typeof="schema:WebPage" resource="http://schema.org/">
         <cite property="schema:name"><a href="http://schema.org/">schema.org</a></cite>.
+      </dd><dt id="ref-discogs">Discogs</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.discogs.com/developers/">
+        <cite property="schema:name"><a href="https://www.discogs.com/developers/">Discogs Quickstart</a></cite>.
+      </dd><dt id="ref-lastfm">Last.fm</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.last.fm/api">
+        <cite property="schema:name"><a href="https://www.last.fm/api">Last.fm API</a></cite>.
       </dd><dt id="ref-CSL">CSL</dt><dd property="schema:citation" typeof="schema:WebPage" resource="http://citationstyles.org/">
-        <cite property="schema:name"><a href="http://citationstyles.org/">Citation Styles
-        Language</a></cite>.
+        <cite property="schema:name"><a href="http://citationstyles.org/">Citation Styles Language</a></cite>.
       </dd><dt id="ref-LinkedData">LinkedData</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.w3.org/wiki/LinkedData">
         <cite property="schema:name"><a href="https://www.w3.org/wiki/LinkedData">LinkedData on W3C</a></cite>.
+      </dd><dt id="ref-Python">Python</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.python.org/doc/essays/blurb/">
+        <cite property="schema:name"><a href="https://www.python.org/doc/essays/blurb/">What is Python</a></cite>?
+      </dd><dt id="ref-PostgreSQL">PostgreSQL</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.postgresql.org/about/">
+        <cite property="schema:name"><a href="https://www.postgresql.org/about/">What is PostgreSQL</a></cite>?
+      </dd><dt id="ref-SPARQL">SPARQL</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.ontotext.com/knowledgehub/fundamentals/what-is-sparql/">
+        <cite property="schema:name"><a href="https://www.ontotext.com/knowledgehub/fundamentals/what-is-sparql/">What is SPARQL</a></cite>?
+      </dd><dt id="ref-Django">Django</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.djangoproject.com/">
+        <cite property="schema:name"><a href="https://www.djangoproject.com/">Django Project</a></cite>.
+      </dd><dt id="ref-lastfm">Last.fm</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://www.linkedin.com/company/last-fm">
+        <cite property="schema:name"><a href="https://www.linkedin.com/company/last-fm">About Last.fm</a></cite>.
+      </dd><dt id="ref-musicontology">Music Ontology</dt><dd property="schema:citation" typeof="schema:WebPage" resource="http://musicontology.com/">
+        <cite property="schema:name"><a href="http://musicontology.com/">The Music Ontology main page</a></cite>.
+      </dd><dt id="ref-wade">WADe</dt><dd property="schema:citation" typeof="schema:WebPage" resource="https://profs.info.uaic.ro/~busaco/teach/courses/wade/">
+        <cite property="schema:name"><a href="https://profs.info.uaic.ro/~busaco/teach/courses/wade/">Official course page</a></cite>.
       </dd></dl>
   </section></body></html>
