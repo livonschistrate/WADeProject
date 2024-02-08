@@ -1,0 +1,46 @@
+"use client";
+
+import React, { useState } from "react";
+import "./login.css";
+
+export default function MainPage(){
+    const [isLogin, setIsLogin] = useState(true);
+
+    return(
+    <div>
+        <MainPageHeader/>
+        <section class="info-container">
+        <h2>Welcome to Your Website</h2>
+        <p>This is the home page content. You can replace this with the content specific to your home page.</p>
+        </section>
+        <MainPageFooter/>
+    </div>
+    );
+}
+
+export function MainPageHeader(){
+    return(
+    <div>
+        <header>
+        <h3>ViRE - Vinyl Recommender</h3>
+        </header>
+        
+        <nav>
+        <a href="#home">Home</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#playlists">Playlists</a>
+        <a href="#user"><i class="fa fa-user"></i></a>
+        </nav>
+    </div>
+    );
+}
+
+export function MainPageFooter(){
+    return(
+        <div>
+            <footer>
+            <p>&copy; 2024 Web.fm @ WADe. All rights reserved.</p>
+            </footer>
+        </div>
+    );
+}
