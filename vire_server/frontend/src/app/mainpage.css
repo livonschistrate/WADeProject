@@ -46,6 +46,10 @@ footer {
     width: 100%;
 }
 
+h2{
+    text-align: center;
+}
+
 .info-container {
     background-color: #805af2;
     border-radius: 15px;
@@ -55,3 +59,121 @@ footer {
     padding: 20px;
     max-width: 600px;
   }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .form-group button {
+    position: relative;
+    background-color: #022cea;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .account-links{
+    position: absolute;
+    display: none;
+    left: 51%;
+    background-color: #333;
+  }
+
+  .account-links:hover{
+    color: #333;
+  }
+
+  .account-button:hover + .account-links, .account-links:hover{
+    display: block;
+    }
+
+.account-button a{
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+
+  .link-button {
+    display: inline-block;
+    /* background-color: #4CAF50; */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    place-items: center;
+    left:35%;
+  }
+
+  .discogs-link{
+    background-color: #444;
+  }
+
+  .discogs-link:hover {
+    background-color: #727772;
+  }
+
+  .lastfm-link{
+    background-color: #5b0a0a;
+  }
+
+  .lastfm-link:hover {
+    background-color: #a73e39;
+  }
+  
+  .update-info:hover {
+    background-color: #434cfa;
+  }
+
+  .pref-button-group{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .pref-button-group button {
+    display: inline-block;
+    /* background-color: #4CAF50; */
+    border: none;
+    background-color: #022cea;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .pref-button-group .i-like:hover{
+    background-color:green;
+  }
+
+  .pref-button-group .i-dislike:hover{
+    background-color:red;
+  }
+
+  .pref-button-group .i-own:hover{
+    background-color:gray;
+  }
+  
