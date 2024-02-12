@@ -1,7 +1,7 @@
-"use client";
-
 import React, { useState } from "react";
 import "./login.css";
+// import {Link, useNavigate} from 'react-router-dom'
+
 
 export default function Login(){
     const [isLogin, setIsLogin] = useState(true);
@@ -9,6 +9,7 @@ export default function Login(){
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
     const [checkPass, checkPassword] = useState('');
+    const [loginSuccess, setLoginSuccess] = useState(false);
 
     const handleToggle = () => {
         setIsLogin(!isLogin);
@@ -23,13 +24,14 @@ export default function Login(){
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: JSON.stringify({ email, password }),
+              body: JSON.stringify({ email:email, password:password }),
             });
       
             if (response.ok) {
               const result = await response.json();
               if (result.success) {
                 console.log('Login successful');
+                setLoginSuccess(true);
               } else {
                 console.error('Login failed:', result.errors);
               }
@@ -41,6 +43,7 @@ export default function Login(){
           }
 
         console.log(`Email: ${email}, Password: ${password}`);
+        return loginSuccess;
     }
 
     const handleRegisterInfo = async (e) =>{
@@ -53,13 +56,14 @@ export default function Login(){
                   headers: {
                     'Content-Type': 'application/json',
                   },
-                  body: JSON.stringify({ email, username, password }),
+                  body: JSON.stringify({ email:email, username:username, password:password }),
                 });
           
                 if (response.ok) {
                   const result = await response.json();
                   if (result.success) {
                     console.log('Register successful');
+                    setLoginSuccess(true);
                   } else {
                     console.error('Register failed:', result.errors);
                   }
@@ -71,29 +75,30 @@ export default function Login(){
               }
 
             console.log(`Email: ${email}, Username: ${username}, Password: ${password}`);
+            return loginSuccess;
         } else {
             alert("Check the passwords and retype again.");
         }
     }
 
-    if(isLogin == true){
+    if(isLogin === true){
         return (
-    <div class="login-container">
+    <div className="login-container">
         <h2>ViRE - Vinyl Recommender</h2>
-        <form class="login-form" action="{% url login %}" onSubmit={handleLoginInfo} method="POST">
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="text" id="email" required
+        <form className="login-form" action="{% url login %}" onSubmit={handleLoginInfo} method="POST">
+        <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input type="text" id="email" value={email}
                     onChange={(e) => setEmail(e.target.value)}/>
         </div>
     
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" required
+        <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input type="password" id="password" value={password}
                     onChange={(e) => setPassword(e.target.value)}/>
         </div>
     
-        <div class="form-group">
+        <div className="form-group">
             <button type="submit">Login</button>
         </div>
         </form>
@@ -103,34 +108,34 @@ export default function Login(){
     </div>);
     } else {
         return(
-    <div class="login-container">
+    <div className="login-container">
         <h2>ViRE - Vinyl Recommender</h2>
-        <form class="login-form" onSubmit={handleRegisterInfo}>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="text" id="email" required
+        <form className="login-form" onSubmit={handleRegisterInfo}>
+            <div className="form-group">
+                <label htmlFor="email">Email:</label>
+                <input type="text" id="email" value={email}
                         onChange={(e) => setEmail(e.target.value)}/>
             </div>
 
-            <div class="form-group">
-                <label for="Username">Username:</label>
-                <input type="text" id="Username" required
+            <div className="form-group">
+                <label htmlFor="Username">Username:</label>
+                <input type="text" id="Username" value={username}
                         onChange={(e) => setUsername(e.target.value)}/>
             </div>
         
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" required
+            <div className="form-group">
+                <label htmlFor="password">Password:</label>
+                <input type="password" id="password" value={password}
                         onChange={(e) => setPassword(e.target.value)}/>
             </div>
 
-            <div class="form-group">
-                <label for="password">Retype password:</label>
-                <input type="password" id="password" required
+            <div className="form-group">
+                <label htmlFor="password">Retype password:</label>
+                <input type="password" id="password" value={checkPass}
                         onChange={(e) => checkPassword(e.target.value)}/>
             </div>
         
-            <div class="form-group" onClick={() => this.handleRegisterInfo()}>
+            <div className="form-group" onClick={() => this.handleRegisterInfo()}>
                 <button type="submit">Register</button>
             </div>
             </form>

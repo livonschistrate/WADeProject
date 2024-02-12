@@ -1,11 +1,9 @@
-"use client";
-
 import React, { useState } from "react";
 import "./login.css";
 import "./mainpage.css"
 import { MainPageHeader, MainPageFooter } from "./mainpage";
 
-export default function RecommendationPage(){
+export default function PlaylistsPage(){
     // const [searchText, setSearchText] = useState("");
 
     return(

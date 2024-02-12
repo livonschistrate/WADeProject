@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import "./login.css";
 import "./mainpage.css"
@@ -27,13 +25,13 @@ export function MainPageHeader(){
         </header>
         
         <nav>
-        <a href="#home">Home</a>
-        <a href="#recommendations">Recommendations</a>
-        <a href="#playlists">Playlists</a>
+        <a href="/">Home</a>
+        <a href="/recommendations">Recommendations</a>
+        <a href="/playlists">Playlists</a>
         <a class="account-button"><i class="fa fa-user"></i></a>
         <div class="account-links">
-            <a href="#settings">Settings</a>
-            <a href="#logout">Log-out</a>
+            <a href="/settings">Settings</a>
+            <a href="/">Log-out</a>
         </div>
         </nav>
     </div>
