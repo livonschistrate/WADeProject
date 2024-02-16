@@ -9,12 +9,15 @@ schema = Namespace("https://schema.org/MusicRecording")
 
 
 class Users(models.Model):
-    user_id = models.IntegerField()
+    user_id = models.AutoField(primary_key=True)
     username = models.TextField()
     email = models.TextField()
-    country_code = models.IntegerField()
+    password = models.TextField()
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField()
+    discogs_linked = models.BooleanField()
+    lastfm_linked = models.BooleanField()
+    logged_in = models.BooleanField()
 
     class Meta:
         managed = False
@@ -22,7 +25,7 @@ class Users(models.Model):
 
 
 class PlaylistsUsers(models.Model):
-    id = models.IntegerField()
+    up_id = models.AutoField(primary_key=True)
     playlist_id = models.ForeignKey('Playlists', models.DO_NOTHING, db_column='playlist_id')
     user_id = models.ForeignKey('Users', models.DO_NOTHING, db_column='user_id')
 
@@ -32,7 +35,7 @@ class PlaylistsUsers(models.Model):
 
 
 class Playlists(models.Model):
-    playlist_id = models.IntegerField()
+    playlist_id = models.AutoField(primary_key=True)
     name = models.TextField()
     owner_id = models.IntegerField()
     created_at = models.DateTimeField()
@@ -44,7 +47,7 @@ class Playlists(models.Model):
 
 
 class PlaylistsSongs(models.Model):
-    id = models.IntegerField()
+    ps_id = models.AutoField(primary_key=True)
     playlist_id = models.ForeignKey('Playlists', models.DO_NOTHING, db_column='playlist_id')
     song_id = models.ForeignKey('Songs', models.DO_NOTHING, db_column='songs_id')
 
@@ -54,7 +57,7 @@ class PlaylistsSongs(models.Model):
 
 
 class Songs(models.Model):
-    song_id = models.IntegerField()
+    song_id = models.AutoField(primary_key=True)
     name = models.TextField()
     singer = models.TextField()
     genre = models.TextField()
