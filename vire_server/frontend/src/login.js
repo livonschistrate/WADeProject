@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import "./login.css";
-// import {Link, useNavigate} from 'react-router-dom'
+import { emailAuthenticated, setEmailAuth } from "./App";
 
-
-export default function Login(){
-    const [isLogin, setIsLogin] = useState(true);
+const Login = ({ onLogin }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [username, setUsername] = useState('');
-    const [checkPass, checkPassword] = useState('');
-    const [loginSuccess, setLoginSuccess] = useState(false);
 
-    const handleToggle = () => {
-        setIsLogin(!isLogin);
-    }
+    function setCookie(cname, cvalue, exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      let expires = "expires="+ d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }    
 
     const handleLoginInfo = async (e) =>{
         e.preventDefault();
@@ -29,11 +27,14 @@ export default function Login(){
       
             if (response.ok) {
               const result = await response.json();
-              if (result.success) {
+              if (result.success) {                               
                 console.log('Login successful');
-                setLoginSuccess(true);
+                setEmailAuth(email);
+                onLogin();
+                setCookie("vireLoggedIn", true, 1);
               } else {
                 console.error('Login failed:', result.errors);
+                alert("Login failed. Retype email or password again.");
               }
             } else {
               console.error('Response error:', response.statusText);
@@ -43,108 +44,36 @@ export default function Login(){
           }
 
         console.log(`Email: ${email}, Password: ${password}`);
-        return loginSuccess;
-    }
+    }    
 
-    const handleRegisterInfo = async (e) =>{
-        if (checkPass === password){
-            e.preventDefault();
-
-            try {
-                const response = await fetch('http://localhost:8000/api/register/', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                  },
-                  body: JSON.stringify({ email:email, username:username, password:password }),
-                });
-          
-                if (response.ok) {
-                  const result = await response.json();
-                  if (result.success) {
-                    console.log('Register successful');
-                    setLoginSuccess(true);
-                  } else {
-                    console.error('Register failed:', result.errors);
-                  }
-                } else {
-                  console.error('Response error:', response.statusText);
-                }
-              } catch (error) {
-                console.error('Fetch error:', error.message);
-              }
-
-            console.log(`Email: ${email}, Username: ${username}, Password: ${password}`);
-            return loginSuccess;
-        } else {
-            alert("Check the passwords and retype again.");
-        }
-    }
-
-    if(isLogin === true){
-        return (
-    <div className="login-container">
-        <h2>ViRE - Vinyl Recommender</h2>
-        <form className="login-form" action="{% url login %}" onSubmit={handleLoginInfo} method="POST">
-        <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input type="text" id="email" value={email}
-                    onChange={(e) => setEmail(e.target.value)}/>
-        </div>
-    
-        <div className="form-group">
-            <label htmlFor="password">Password:</label>
-            <input type="password" id="password" value={password}
-                    onChange={(e) => setPassword(e.target.value)}/>
-        </div>
-    
-        <div className="form-group">
-            <button type="submit">Login</button>
-        </div>
-        </form>
-        <p onClick={handleToggle} style={{ cursor: 'pointer' }}>
-          Don&apos;t have an account? Register here.
-        </p>
-    </div>);
-    } else {
-        return(
-    <div className="login-container">
-        <h2>ViRE - Vinyl Recommender</h2>
-        <form className="login-form" onSubmit={handleRegisterInfo}>
-            <div className="form-group">
-                <label htmlFor="email">Email:</label>
-                <input type="text" id="email" value={email}
-                        onChange={(e) => setEmail(e.target.value)}/>
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="Username">Username:</label>
-                <input type="text" id="Username" value={username}
-                        onChange={(e) => setUsername(e.target.value)}/>
-            </div>
-        
-            <div className="form-group">
-                <label htmlFor="password">Password:</label>
-                <input type="password" id="password" value={password}
-                        onChange={(e) => setPassword(e.target.value)}/>
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="password">Retype password:</label>
-                <input type="password" id="password" value={checkPass}
-                        onChange={(e) => checkPassword(e.target.value)}/>
-            </div>
-        
-            <div className="form-group" onClick={() => this.handleRegisterInfo()}>
-                <button type="submit">Register</button>
-            </div>
-            </form>
-        <p onClick={handleToggle} style={{ cursor: 'pointer' }}>
-            Already have an account? Login here.
-        </p>
-    </div> 
-        );
-    
-    }
+  return (
+    <div className="login-wrapper">
+      <div className="login-container">
+          <h2>ViRE - Vinyl Recommender</h2>
+          <form className="login-form" action="" onSubmit={handleLoginInfo} method="POST">
+          <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input type="text" id="email" value={email}
+                      onChange={(e) => setEmail(e.target.value)}/>
+          </div>
+      
+          <div className="form-group">
+              <label htmlFor="password">Password:</label>
+              <input type="password" id="password" value={password}
+                      onChange={(e) => setPassword(e.target.value)}/>
+          </div>
+      
+          <div className="form-group">
+              <button type="submit">Login</button>
+          </div>
+          </form>
+          <p style={{ cursor: 'pointer' }}>
+            <a href="/register">Don&apos;t have an account? Register here.</a>
+          </p>
+      </div>
+    </div>   
+    );
     
 }
+
+export default Login;

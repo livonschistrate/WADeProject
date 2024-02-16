@@ -5,18 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  background-image: url('background-image.jpg');
-  background-size: cover;
-  margin: 0;
-
 }
 
-#root{
-  width:100vw;
-  height:100vh;
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
