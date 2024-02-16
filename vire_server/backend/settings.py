@@ -165,8 +165,8 @@ DATABASES = {
     'default':{
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fqkhnqim',
-        'USER': 'fqkhnqim',
-        'PASSWORD': 'KkaMK-vEdAmY_v2bRFTlrBHazJTgkVSd',
+        'USER': '********',
+        'PASSWORD': '********************************',
         'HOST': 'mouse.db.elephantsql.com',
         'PORT': '5432'
     }
