@@ -158,25 +158,33 @@
       <section id="database-architecture">
         <h3><span>3.4 </span>Database architecture</h3>
         <p>
-          
+          <div style="text-align:center">
+            <img src="diagrams/vire-db.jpg" width="100%">
+            <figcaption style="margin-bottom:40px; margin-top:10px"><b>Database diagram</b></figcaption>
+          </div>
         </p>
       </section>
       <section id="user-module">
         <h3><span>3.5 </span>User module</h3>
         <p>
-          
+          The user module allows users to register and log into the app. Entering into the app enables users 
+          to view recommendations, select their preferences, as well as create their own playlists.
         </p>
       </section>
       <section id="Recommendation service">
         <h3><span>3.6 </span>Recommendation service</h3>
         <p>
-          
+          We suggested a recommendation service that is based on the likes/dislikes of various artists and genres and 
+          purchases (in any format) of songs and albums. The user simply searches for either the artist's/band's name
+          or the genre in the pages dedicated for likes, dislikes and purchases. Based on the saved preferences, the
+          recommendations are shown below.
         </p>
       </section>
       <section id="playlist-making">
         <h3><span>3.7 </span>Playlist making</h3>
         <p>
-          
+          The playlist service needs data about who created it and which songs are included with it, along with its 
+          relevant details (artist, album, year etc.).
         </p>
       </section>
     </section>
@@ -201,7 +209,31 @@
         <b>The Music Ontology</b> provides a vocabulary for publishing and linking a wide range of music-related data on the Web. Music Ontology data 
         can be published by anyone as part of a web site or an API and linked with existing data, therefore creating a music-related web of data.
         <br>
-        The Music Ontology Specification is useful for obtaining concepts and properties that describe music on the Semantic Web. 
+        To operate with this vocabulary, we use <b>RDF</b> (Resource Description Framework) to identify relationships between each characteristic.
+        With this, The Music Ontology Specification is useful for obtaining concepts and properties that describe music on the Semantic Web. In order to use it, the 
+        following namespaces must be added:
+        <pre>
+        @prefix mo: http://purl.org/ontology/mo/ .
+        @prefix dc: http://purl.org/dc/elements/1.1/ .
+        @prefix xsd: http://www.w3.org/2001/XMLSchema# .
+        @prefix tl: http://purl.org/NET/c4dm/timeline.owl# .
+        @prefix event: http://purl.org/NET/c4dm/event.owl# .
+        @prefix foaf: http://xmlns.com/foaf/0.1/ .
+        @prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+        </pre>
+        <br>
+        Here is an example of how to describe a track from a vinyl (taken from .ttl):
+        <pre>
+          @prefix dc: http://purl.org/dc/elements/1.1/ .
+          @prefix ns1: http://purl.org/ontology/mo/ .
+          @prefix xsd: http://www.w3.org/2001/XMLSchema# .
+
+        http://purl.org/ontology/mo/#track-Diamond a ns1:Track ;
+            dc:title "Diamond" ;
+            dc:year 2022 ;
+            ns1:artist "Black Scorpion Music" ;
+            ns1:genre "Electronic" .
+        </pre>
       </p>
     </section>
     <section id="frontend-design">
