@@ -37,14 +37,14 @@ def search_tracks(artist):
                         song_ids.append(song_id)
                         song_graph = Graph()
                         track_uri = mo['#track-' + song_id]
-                        song_graph.add((track_uri, RDF.type, mo.Track))
+                        song_graph.add((track_uri, RDF.type, mo.Release))
                         song_graph.add((track_uri, dc['title'], Literal(track.title)))
                         song_graph.add((track_uri, dc['year'], Literal(result.year)))
-                        song_graph.add((track_uri, dc['genre'], Literal(result.genres)))
-                        song_graph.add((track_uri, dc['album'], Literal(result.title)))
+                        song_graph.add((track_uri, mo['genre'], Literal(result.genres)))
+                        song_graph.add((track_uri, mo['album'], Literal(result.title)))
                         
                         for artist in result.artists:
-                            song_graph.add((track_uri, dc['artist'], Literal(artist.name)))
+                            song_graph.add((track_uri, foaf['artist'], Literal(artist.name)))
                         
                         ttl_data = song_graph.serialize(format='turtle')
                         with open(savingfile, 'a', encoding='utf-8') as ttl_file:
