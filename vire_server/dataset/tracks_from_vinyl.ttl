@@ -1,0 +1,611 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+
+<http://purl.org/ontology/mo/#track-Ashes> a ns1:Track ;
+    dc:title "Ashes" ;
+    ns1:artist "Son And The Holy Ghosts" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-BlackRoses> a ns1:Track ;
+    dc:title "Black Roses" ;
+    ns1:artist "Son And The Holy Ghosts" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-Disaster> a ns1:Track ;
+    dc:title "Disaster" ;
+    ns1:artist "Son And The Holy Ghosts" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-EternalLove> a ns1:Track ;
+    dc:title "Eternal Love" ;
+    ns1:artist "Son And The Holy Ghosts" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-FightingHorse> a ns1:Track ;
+    dc:title "Fighting Horse" ;
+    ns1:artist "Son And The Holy Ghosts" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-ShadowsMonsters> a ns1:Track ;
+    dc:title "Shadows & Monsters" ;
+    ns1:artist "Son And The Holy Ghosts" ;
+    ns1:genre "Folk, World, & Country" .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ontology/mo/#track-Untitled> a ns1:Track ;
+    dc:title "Untitled" ;
+    dc:year 2008 ;
+    ns1:artist "Audible Pain" ;
+    ns1:genre "Electronic" .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+
+<http://purl.org/ontology/mo/#track-PopulaireFeestmars1> a ns1:Track ;
+    dc:title "Populaire Feestmars 1" ;
+    ns1:artist "De Bietenbouwers" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-PopulaireFeestmars2> a ns1:Track ;
+    dc:title "Populaire Feestmars 2" ;
+    ns1:artist "De Bietenbouwers" ;
+    ns1:genre "Folk, World, & Country" .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ontology/mo/#track-BlueJeans> a ns1:Track ;
+    dc:title "Blue Jeans" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "2:30" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-CrazyHeart> a ns1:Track ;
+    dc:title "Crazy Heart" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "4:59" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-ImNormal> a ns1:Track ;
+    dc:title "I'm Normal" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "3:15" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-IsThisAmerica> a ns1:Track ;
+    dc:title "Is This America" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "4:31" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-LivingInThe70s> a ns1:Track ;
+    dc:title "Living In The 70's" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "3:40" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-MillionDollarRiff> a ns1:Track ;
+    dc:title "Million Dollar Riff" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "3:48" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-MumboJumbo> a ns1:Track ;
+    dc:title "Mumbo Jumbo" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "3:23" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-SomewhereInSydney> a ns1:Track ;
+    dc:title "Somewhere In Sydney" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "3:47" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-StraightInAGayGayWorld> a ns1:Track ;
+    dc:title "Straight In A Gay Gay World" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "4:28" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-ThisIsMyCity> a ns1:Track ;
+    dc:title "This Is My City" ;
+    dc:year 1977 ;
+    ns1:artist "Skyhooks" ;
+    ns1:duration "3:39" ;
+    ns1:genre "Rock" .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ontology/mo/#track-DirtTrackCowboys> a ns1:Track ;
+    dc:title "Dirt Track Cowboys" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-GoodFriends> a ns1:Track ;
+    dc:title "Good Friends" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-GoodThingsInLife> a ns1:Track ;
+    dc:title "Good Things In Life" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-GrandpasPiano> a ns1:Track ;
+    dc:title "Grandpa's Piano" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-IDidWhat> a ns1:Track ;
+    dc:title "I Did What?" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-KingOfTheRoad> a ns1:Track ;
+    dc:title "King Of The Road" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-LastManStanding> a ns1:Track ;
+    dc:title "Last Man Standing" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-Milestones> a ns1:Track ;
+    dc:title "Milestones" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-NewEnglandHighway> a ns1:Track ;
+    dc:title "New England Highway" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+<http://purl.org/ontology/mo/#track-PartyDownUnder> a ns1:Track ;
+    dc:title "Party Down Under" ;
+    dc:year 2018 ;
+    ns1:artist "Adam Brand" ;
+    ns1:genre "Folk, World, & Country" .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ontology/mo/#track-GrindTimeIntro> a ns1:Track ;
+    dc:title "Grind Time: Intro" ;
+    dc:year 1995 ;
+    ns1:artist "Swell \"L\"" ;
+    ns1:genre "Hip Hop" .
+
+<http://purl.org/ontology/mo/#track-LivinLo> a ns1:Track ;
+    dc:title "Livin Lo" ;
+    dc:year 1995 ;
+    ns1:artist "Swell \"L\"" ;
+    ns1:genre "Hip Hop" .
+
+<http://purl.org/ontology/mo/#track-NorthPoleLivin> a ns1:Track ;
+    dc:title "North Pole Livin’" ;
+    dc:year 1995 ;
+    ns1:artist "Swell \"L\"" ;
+    ns1:genre "Hip Hop" .
+
+<http://purl.org/ontology/mo/#track-PlayezByNature> a ns1:Track ;
+    dc:title "Playez By Nature" ;
+    dc:year 1995 ;
+    ns1:artist "Swell \"L\"" ;
+    ns1:genre "Hip Hop" .
+
+<http://purl.org/ontology/mo/#track-RatherMajor> a ns1:Track ;
+    dc:title "Rather Major" ;
+    dc:year 1995 ;
+    ns1:artist "Swell \"L\"" ;
+    ns1:genre "Hip Hop" .
+
+<http://purl.org/ontology/mo/#track-Skimmin4SomeRiches> a ns1:Track ;
+    dc:title "Skimmin 4 Some Riches" ;
+    dc:year 1995 ;
+    ns1:artist "Swell \"L\"" ;
+    ns1:genre "Hip Hop" .
+
+<http://purl.org/ontology/mo/#track-StaccinPaper> a ns1:Track ;
+    dc:title "Staccin Paper" ;
+    dc:year 1995 ;
+    ns1:artist "Swell \"L\"" ;
+    ns1:genre "Hip Hop" .
+
+<http://purl.org/ontology/mo/#track-TypicalSituation> a ns1:Track ;
+    dc:title "Typical Situation" ;
+    dc:year 1995 ;
+    ns1:artist "Swell \"L\"" ;
+    ns1:genre "Hip Hop" .
+
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+
+<http://purl.org/ontology/mo/#track-ThemeFromTheWildAngels> a ns1:Track ;
+    dc:title "Theme From The Wild Angels" ;
+    ns1:artist "Los Angeles Salvajes" ;
+    ns1:genre "Rock" .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ontology/mo/#track-Diamond> a ns1:Track ;
+    dc:title "Diamond" ;
+    dc:year 2022 ;
+    ns1:artist "Black Scorpion Music" ;
+    ns1:genre "Electronic" .
+
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ontology/mo/#track-Track1> a ns1:Track ;
+    dc:title "Track 1 " ;
+    dc:year 1993 ;
+    ns1:artist "Sy-kick" ;
+    ns1:genre "Electronic" .
+
+<http://purl.org/ontology/mo/#track-Track2> a ns1:Track ;
+    dc:title "Track 2" ;
+    dc:year 1993 ;
+    ns1:artist "Sy-kick" ;
+    ns1:genre "Electronic" .
+
+<http://purl.org/ontology/mo/#track-Track3> a ns1:Track ;
+    dc:title "Track 3" ;
+    dc:year 1993 ;
+    ns1:artist "Sy-kick" ;
+    ns1:genre "Electronic" .
+
+<http://purl.org/ontology/mo/#track-Track4> a ns1:Track ;
+    dc:title "Track 4 " ;
+    dc:year 1993 ;
+    ns1:artist "Sy-kick" ;
+    ns1:genre "Electronic" .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ontology/mo/#track-MexicanHairlessBacksliderPossomKingdomAway> a ns1:Track ;
+    dc:title "Mexican Hairless / Backslider / Possom Kingdom / Away" ;
+    dc:year 1996 ;
+    ns1:artist "Toadies" ;
+    ns1:duration "16:41" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-PaperDressIBurn> a ns1:Track ;
+    dc:title "Paper Dress / I Burn" ;
+    dc:year 1996 ;
+    ns1:artist "Toadies" ;
+    ns1:duration "14:07" ;
+    ns1:genre "Rock" .
+
+<http://purl.org/ontology/mo/#track-QuitterIComefromtheWaterTyler> a ns1:Track ;
+    dc:title "Quitter / I Come from the Water / Tyler" ;
+    dc:year 1996 ;
+    ns1:artist "Toadies" ;
+    ns1:duration "13:48" ;
+    ns1:genre "Rock" .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/mo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ontology/mo/#track-AKiss> a ns1:Track ;
+    dc:title "A Kiss" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:26" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-AfterSarah> a ns1:Track ;
+    dc:title "After Sarah" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:26" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Agents> a ns1:Track ;
+    dc:title "Agents" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "0:51" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-AreYouSure> a ns1:Track ;
+    dc:title "Are You Sure?" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "2:27" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-BikingToSchool> a ns1:Track ;
+    dc:title "Biking To School " ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "0:45" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-CastleByers> a ns1:Track ;
+    dc:title "Castle Byers" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "2:48" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-CopsAreGoodAtFinding> a ns1:Track ;
+    dc:title "Cops Are Good At Finding" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:09" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Dispatch> a ns1:Track ;
+    dc:title "Dispatch" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "0:42" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Eleven> a ns1:Track ;
+    dc:title "Eleven" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "3:16" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-FreshBlood> a ns1:Track ;
+    dc:title "Fresh Blood " ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:17" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Friendship> a ns1:Track ;
+    dc:title "Friendship" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:13" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Hallucinations> a ns1:Track ;
+    dc:title "Hallucinations" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:37" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-HangingLights> a ns1:Track ;
+    dc:title "Hanging Lights" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:34" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Hawkins> a ns1:Track ;
+    dc:title "Hawkins" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "5:01" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-HawkinsLab> a ns1:Track ;
+    dc:title "Hawkins Lab" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "2:38" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-HazmatSuits> a ns1:Track ;
+    dc:title "Hazmat Suits" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:44" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-JoyceAndLonnieFighting> a ns1:Track ;
+    dc:title "Joyce And Lonnie Fighting" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:03" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Kids> a ns1:Track ;
+    dc:title "Kids" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "2:39" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Lamps> a ns1:Track ;
+    dc:title "Lamps" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:16" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-LayZBoy> a ns1:Track ;
+    dc:title "Lay-Z-Boy" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:35" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-LightsOut> a ns1:Track ;
+    dc:title "Lights Out" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:05" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-NancyAndBarb> a ns1:Track ;
+    dc:title "Nancy And Barb" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:06" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-NoAutopsy> a ns1:Track ;
+    dc:title "No Autopsy" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:04" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-NoWeapons> a ns1:Track ;
+    dc:title "No Weapons" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "3:25" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-OneBlinkForYes> a ns1:Track ;
+    dc:title "One Blink For Yes" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:48" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Papa> a ns1:Track ;
+    dc:title "Papa" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:28" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-PhotosInTheWoods> a ns1:Track ;
+    dc:title "Photos In The Woods" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "4:33" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-RunAway> a ns1:Track ;
+    dc:title "Run Away" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:48" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-ShellKillYou> a ns1:Track ;
+    dc:title "She'll Kill You" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "2:06" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-StrangerThings> a ns1:Track ;
+    dc:title "Stranger Things" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:08" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-TheUpsideDown> a ns1:Track ;
+    dc:title "The Upside Down" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "5:08" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-Theoretically> a ns1:Track ;
+    dc:title "Theoretically" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:34" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-ThisIsntYou> a ns1:Track ;
+    dc:title "This Isn't You" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "2:24" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-WalkingThroughTheUpsideDown> a ns1:Track ;
+    dc:title "Walking Through The Upside Down" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "1:20" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-WhatElseIsThereToDo> a ns1:Track ;
+    dc:title "What Else Is There To Do?" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "2:00" ;
+    ns1:genre "Stage & Screen" .
+
+<http://purl.org/ontology/mo/#track-YouCanTalkToMe> a ns1:Track ;
+    dc:title "You Can Talk To Me" ;
+    dc:year 2016 ;
+    ns1:artist "Kyle Dixon (2)",
+        "Michael Stein (9)" ;
+    ns1:duration "0:54" ;
+    ns1:genre "Stage & Screen" .
+
