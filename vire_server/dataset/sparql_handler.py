@@ -17,14 +17,14 @@ prefixes = '''
 '''
 
 select_query = '''
-    SELECT ?track ?title ?artist ?genre ?year ?duration
+    SELECT ?track ?title ?artist ?album ?genre ?year
     WHERE {
-        ?track a ns1:Track ;
+        ?track a ns1:Release ;
         dc:title ?title ;
-        dc:year ?year ;
-        ns1:artist ?artist ;
+        foaf:artist ?artist ;
+        ns1:album ?album ;
         ns1:genre ?genre ;
-        ns1:duration ?duration .
+        dc:year ?year .
         }
 '''
 
